@@ -12,6 +12,7 @@ This is a simple Olas agent that watches for whales on a given ethereum blockcha
 ## Get started
 
 1.) poetry shell
+
 2.) pip install 'open-autonomy[all]' && pip install open-aea-ledger-ethereum
 
 3.) get a RPC URL, we recommend [Alchemy](https://www.alchemy.com/), put your URL in a .env under the RPC_URL
