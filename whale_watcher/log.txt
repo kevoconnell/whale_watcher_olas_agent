@@ -19303,3 +19303,55 @@ Profile: https://basescan.org/address/0x382fFCe2287252F930E1C8DC9328dac5BF282bA1
 2025-01-17 16:11:41,946 [INFO] aea.basic_agent.packages.kevin.skills.metrics: [basic_agent] Tearing down Whalewatcherabciapp FSM behaviour.
 2025-01-17 16:11:41,948 [INFO] aea.basic_agent.packages.eightballer.connections.http_client: [basic_agent] HTTP Client has shutdown on port: 8000.
 2025-01-17 16:11:41,949 [INFO] aea.basic_agent.packages.eightballer.connections.http_server: [basic_agent] HTTP Server has shutdown on port: 8888.
+2025-01-17 16:22:38,917 [WARNING] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Class IdleRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-01-17 16:22:38,920 [WARNING] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Class ErrorRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-01-17 16:22:38,921 [WARNING] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Class AlertRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-01-17 16:22:38,921 [WARNING] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Class BlockReceivedRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-01-17 16:22:38,922 [WARNING] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Class DoneRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-01-17 16:22:38,923 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Initializing IdleRound with Web3...
+2025-01-17 16:22:38,924 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Connecting to RPC: https://base-mainnet.g.alchemy.com/v2/cCFSBNfpTz9-I884RFr5kdi8s9SpALe7
+2025-01-17 16:22:39,132 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Successfully connected to Web3
+2025-01-17 16:22:39,133 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Whale threshold set to: 75.0 ETH
+2025-01-17 16:22:39,134 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] ERC20 Transfer event signature: 0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef
+2025-01-17 16:22:39,136 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: idleround -> blockreceivedround on BLOCK_RECEIVED
+2025-01-17 16:22:39,137 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: blockreceivedround -> alertround on TX_OVER_THRESHOLD
+2025-01-17 16:22:39,137 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: blockreceivedround -> idleround on TX_UNDER_THRESHOLD
+2025-01-17 16:22:39,138 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: alertround -> doneround on DONE
+2025-01-17 16:22:39,139 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: doneround -> idleround on DONE
+2025-01-17 16:22:39,139 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: errorround -> idleround on DONE
+2025-01-17 16:22:39,140 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: blockreceivedround -> errorround on TIMEOUT
+2025-01-17 16:22:39,141 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: alertround -> errorround on TIMEOUT
+2025-01-17 16:22:39,142 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Registered transition: idleround -> errorround on TIMEOUT
+2025-01-17 16:22:39,216 [INFO] aea.whale_watcher.packages.eightballer.connections.http_server: [whale_watcher] HTTP Server has connected to port: 8888.
+2025-01-17 16:22:39,218 [INFO] aea.whale_watcher.packages.eightballer.connections.prometheus: [whale_watcher] Prometheus server started at 0.0.0.0:26658
+2025-01-17 16:22:39,219 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up HttpHandler
+2025-01-17 16:22:39,220 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up PrometheusHandler
+2025-01-17 16:22:39,221 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up AdvancedDataRequestBehaviour
+2025-01-17 16:22:39,222 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: num_retrievals
+2025-01-17 16:22:39,222 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: num_requests
+2025-01-17 16:22:39,223 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: memory_usage
+2025-01-17 16:22:39,225 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: cpu_usage
+2025-01-17 16:22:39,226 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Setting up Whalewatcherabciapp FSM behaviour...
+2025-01-17 16:22:39,227 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Initial state set to: idleround
+2025-01-17 16:22:39,228 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] FSM setup complete
+2025-01-17 16:22:39,229 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] FSM act() called. Current state: idleround
+2025-01-17 16:22:39,230 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Executing state: idleround
+2025-01-17 16:22:39,230 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] IdleRound.act() called
+2025-01-17 16:22:39,367 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Current block number: 25170805
+2025-01-17 16:22:39,368 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] New block detected! Processing block: 25170805
+2025-01-17 16:22:39,970 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Processed 138 transfer logs
+2025-01-17 16:22:39,972 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Block processing complete, transitioning...
+2025-01-17 16:22:39,973 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Current state: idleround, Event: BLOCK_RECEIVED, Next state: blockreceivedround
+2025-01-17 16:22:39,974 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Transitioning from idleround to blockreceivedround
+2025-01-17 16:22:39,975 [INFO] aea.whale_watcher.agent_loop: [whale_watcher] Start processing messages...
+2025-01-17 16:22:39,978 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] FSM act() called. Current state: blockreceivedround
+2025-01-17 16:22:39,980 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Executing state: blockreceivedround
+2025-01-17 16:22:39,981 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] BlockReceivedRound: Analyzing ERC20 transfers...
+2025-01-17 16:22:53,631 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] New whale discovered!
+🐋 Whale detected!
+Address: 0x4e3ae00E8323558fA5Cac04b152238924AA31B60
+Balance: 529.98 ETH
+Basescan: https://basescan.org/address/0x4e3ae00E8323558fA5Cac04b152238924AA31B60
+2025-01-17 16:22:53,706 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] FSM act() called. Current state: blockreceivedround
+2025-01-17 16:22:53,707 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] Executing state: blockreceivedround
+2025-01-17 16:22:53,708 [INFO] aea.whale_watcher.packages.kevin.skills.whale_watcher: [whale_watcher] BlockReceivedRound: Analyzing ERC20 transfers...

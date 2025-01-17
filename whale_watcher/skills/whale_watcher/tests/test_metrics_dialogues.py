@@ -17,7 +17,7 @@
 #   limitations under the License.
 #
 # ------------------------------------------------------------------------------
-"""This module contains the tests of the dialogue classes of the http_echo skill."""
+"""This module contains the tests of the dialogue classes of the whale_watcher skill."""
 
 from typing import cast
 from pathlib import Path
@@ -25,7 +25,7 @@ from pathlib import Path
 from aea.test_tools.test_skill import COUNTERPARTY_AGENT_ADDRESS, BaseSkillTestCase
 
 from packages.eightballer.protocols.http.message import HttpMessage
-from packages.kevin.skills.metrics.dialogues import (
+from packages.kevin.skills.whale_watcher.dialogues import (
     HttpDialogue,
     HttpDialogues,
     DefaultDialogue,

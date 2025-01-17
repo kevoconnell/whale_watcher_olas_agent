@@ -18,7 +18,7 @@
 #
 # ------------------------------------------------------------------------------
 
-"""This module contains the handler for the 'metrics' skill."""
+"""This module contains the handler for the 'whale_watcher' skill."""
 
 import json
 from typing import cast
@@ -28,7 +28,7 @@ from aea.protocols.base import Message
 
 from packages.eightballer.protocols.default import DefaultMessage
 from packages.eightballer.protocols.http.message import HttpMessage
-from packages.kevin.skills.metrics.dialogues import (
+from packages.kevin.skills.whale_watcher.dialogues import (
     HttpDialogue,
     HttpDialogues,
     DefaultDialogues,
