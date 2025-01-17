@@ -1,64 +1,31 @@
 # watch_whales
 
+This is a simple Olas agent that watches for whales on a given ethereum blockchain
 
 
-## Table of Contents
+## Get started
 
-- [Getting Started](#getting-started)
-  - [Installation](#installation)
-  - [Setup for Development](#setup-for-development)
-- [Usage](#usage)
-- [Commands](#commands)
-  - [Testing](#testing)
-  - [Linting](#linting)
-  - [Formatting](#formatting)
-  - [Releasing](#releasing)
-- [License](#license)
 
-## Getting Started
+1.) get a RPC URL, we recommend [Alchemy](https://www.alchemy.com/), put your URL in a .env under the RPC_URL
 
-### Installation and Setup for Development
+2.) adjust WHALE_THRESHOLD to the amount you want. for simplicity sake we recommend ~75 ETH
 
-If you're looking to contribute or develop with `watch_whales`, get the source code and set up the environment:
+3.) run the following
 
-```shell
-git clone https://github.com/eightballer/watch_whales --recurse-submodules
-cd watch_whales
-make install
 ```
+cd whale_watcher
 
-## Commands
+# Generate and add Ethereum key
+aea -s generate-key ethereum && aea -s add-key ethereum
 
-Here are common commands you might need while working with the project:
+# Install dependencies
+aea -s install
 
-### Formatting
+# Set up certificates for P2P communication
+aea -s issue-certificates
 
-```shell
-make fmt
-```
-
-### Linting
-
-```shell
-make lint
-```
-
-### Testing
-
-```shell
-make test
-```
-
-### Locking
-
-```shell
-make hashes
-```
-
-### all
-
-```shell
-make all
+# Start the agent
+aea -s run
 ```
 
 ## License
