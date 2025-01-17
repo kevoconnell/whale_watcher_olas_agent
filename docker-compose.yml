@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  whale-watcher:
+    build: .
+    environment:
+      - RPC_URL=${RPC_URL}
+      - WHALE_THRESHOLD=${WHALE_THRESHOLD:-50}
+    restart: unless-stopped
+    volumes:
+      - ./whale_watcher:/app/whale_watcher
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/status"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
