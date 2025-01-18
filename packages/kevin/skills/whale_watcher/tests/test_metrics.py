@@ -10,8 +10,8 @@ from aea.test_tools.test_skill import BaseSkillTestCase
 from aea.protocols.dialogue.base import DialogueMessage
 
 from packages.eightballer.protocols.http.message import HttpMessage
-from packages.kevin.skills.metrics.handlers import HttpHandler
-from packages.kevin.skills.metrics.dialogues import HttpDialogues
+from packages.kevin.skills.whale_watcher.handlers import HttpHandler
+from packages.kevin.skills.whale_watcher.dialogues import HttpDialogues
 
 
 ROOT_DIR = Path(__file__).parent.parent.parent.parent.parent.parent

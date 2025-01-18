@@ -58,4 +58,4 @@ type: connection
 config:
   host: 0.0.0.0
   port: 8888
-  target_skill_id: eightballer/metrics:0.1.0
+  target_skill_id: kevin/whale_watcher:0.1.0
