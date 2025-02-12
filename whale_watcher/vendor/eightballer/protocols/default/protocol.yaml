@@ -1,0 +1,22 @@
+name: default
+author: eightballer
+version: 0.1.0
+protocol_specification_id: eightballer/default:0.1.0
+type: protocol
+description: A protocol for exchanging any bytes message.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: bafybeihipvpat6bnyepjkxonmhe5jufj4fbick65xfbq7mvrv5zxhxzf7y
+  __init__.py: bafybeibnksfe5q4ps5sv53timt5rrgt3thtb6kqlginkr3oqqdx6hymnua
+  custom_types.py: bafybeihoyiw6krzov5j2mx4k7gwz3rklepuor4t2wusxig353iutcmy7qu
+  default.proto: bafybeiazrnj42ik4qieg3o2pkdup2o2idkwppoouqe4bmv5unclhdgswma
+  default_pb2.py: bafybeieq35o4roagivajdaooylnow6uapqowa3feknlfuzo5xvnhddsu7a
+  dialogues.py: bafybeid3i3fe3ysgpqpvct2yva5u7rk4q3k72lzoviogpiduv6asq5tfnm
+  message.py: bafybeifan3ewza2n3nnyn2a6v5si2j6vzebobirzb7bol7phb3mhsdhg44
+  serialization.py: bafybeievpmq6zebklxyuwap6h2p3f3cc2fbencsp6s6zzdze35lwmvzi5m
+  tests/__init__.py: bafybeibnksfe5q4ps5sv53timt5rrgt3thtb6kqlginkr3oqqdx6hymnua
+  tests/test_default_dialogues.py: bafybeicigj4dmzfbo34i4pg3phvnaovkujjvsnpcbv6p2fsnlt2p5d3jci
+fingerprint_ignore_patterns: []
+dependencies:
+  protobuf: {}

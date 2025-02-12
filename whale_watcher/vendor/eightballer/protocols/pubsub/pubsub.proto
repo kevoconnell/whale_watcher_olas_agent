@@ -1,0 +1,54 @@
+syntax = "proto3";
+
+package aea.eightballer.pubsub.v0_1_0;
+
+message PubsubMessage{
+
+  // Performatives and contents
+  message Subscribe_Performative{
+    repeated string channels = 1;
+  }
+
+  message Unsubscribe_Performative{
+    repeated string channels = 1;
+  }
+
+  message Publish_Performative{
+    string channel = 1;
+    bytes message = 2;
+  }
+
+  message Subscribed_Performative{
+    string channel = 1;
+    bool success = 2;
+    string info = 3;
+    bool info_is_set = 4;
+  }
+
+  message Unsubscribed_Performative{
+    string channel = 1;
+    bool success = 2;
+    string info = 3;
+    bool info_is_set = 4;
+  }
+
+  message Message_Performative{
+    string channel = 1;
+    bytes data = 2;
+  }
+
+  message Error_Performative{
+    bytes data = 1;
+  }
+
+
+  oneof performative{
+    Error_Performative error = 5;
+    Message_Performative message = 6;
+    Publish_Performative publish = 7;
+    Subscribe_Performative subscribe = 8;
+    Subscribed_Performative subscribed = 9;
+    Unsubscribe_Performative unsubscribe = 10;
+    Unsubscribed_Performative unsubscribed = 11;
+  }
+}

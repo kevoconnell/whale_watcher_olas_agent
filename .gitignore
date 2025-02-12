@@ -14,3 +14,20 @@ keys.json
 
 agent/
 service/
+
+packages/eightballer/protocols/default
+packages/eightballer/protocols/http
+packages/eightballer/protocols/prometheus
+packages/eightballer/protocols/pubsub
+packages/open_aea/protocols/signing
+packages/valory/protocols/ledger_api
+packages/valory/protocols/contract_api
+packages/eightballer/contracts/olas_erc20
+packages/eightballer/connections/http_client
+packages/eightballer/connections/http_server
+packages/eightballer/connections/prometheus
+packages/eightballer/connections/redis_client
+packages/valory/connections/ledger
+packages/eightballer/skills/prometheus
+packages/kevin/skills/better_metrics
+packages/kevin/skills/whale_watcher_abci_app

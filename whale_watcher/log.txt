@@ -1,0 +1,19 @@
+2025-02-12 14:06:35,266 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class DoneRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,268 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class AlertRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,268 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class ErrorRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,269 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class IdleRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,270 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class SetupRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,270 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class BaseState of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,271 [WARNING] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Class BlockReceivedRound of type behaviour found in skill module behaviours.py but not declared in the configuration file.
+2025-02-12 14:06:35,306 [INFO] aea.whale_watcher.packages.eightballer.connections.http_server: [whale_watcher] HTTP Server has connected to port: 8888.
+2025-02-12 14:06:35,307 [INFO] aea.whale_watcher.packages.eightballer.connections.prometheus: [whale_watcher] Prometheus server started at 0.0.0.0:26658
+2025-02-12 14:06:35,307 [INFO] aea.whale_watcher.packages.eightballer.connections.redis_client: [whale_watcher] Redis has connected.
+2025-02-12 14:06:35,308 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up HttpHandler
+2025-02-12 14:06:35,309 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up PrometheusHandler
+2025-02-12 14:06:35,309 [INFO] aea.whale_watcher.packages.author.skills.whale_watcher_abci_app: [whale_watcher] Setting up Whalewatcherabciapp FSM behaviour.
+2025-02-12 14:06:35,310 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] setting up AdvancedDataRequestBehaviour
+2025-02-12 14:06:35,310 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: num_retrievals
+2025-02-12 14:06:35,311 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: num_requests
+2025-02-12 14:06:35,312 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: memory_usage
+2025-02-12 14:06:35,313 [INFO] aea.whale_watcher.packages.eightballer.skills.prometheus: [whale_watcher] Adding Prometheus metric: cpu_usage
+2025-02-12 14:06:35,314 [INFO] aea.whale_watcher.agent_loop: [whale_watcher] Start processing messages...

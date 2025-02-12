@@ -1,0 +1,23 @@
+name: pubsub
+author: eightballer
+version: 0.1.0
+protocol_specification_id: eightballer/pubsub:0.1.0
+type: protocol
+description: A protocol for Publish/Subscribe messaging systems, enabling message
+  distribution through channel-based subscription and publishing.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: bafybeiert7amul2jclk7ngamxmfirwshex3q6mvoo7nilfddcetggfp5pi
+  __init__.py: bafybeifptstelw5j3ob2mewbjoaiywgec7mgmb5bftic6pjsyoavjht6y4
+  dialogues.py: bafybeic5ogf66lx23rjt2in2zwvcdm5w6cpyv6ly4ev63i2rccqyzcvywa
+  message.py: bafybeihaceujc37fzo5fp2lxcdwxo2rb6w4ivlpwzi6mlpy6e4glofllpm
+  pubsub.proto: bafybeifqflqxalgikxfip66qwvbylhwyrvi7jbmlk3jphmvdf35bq6ctl4
+  pubsub_pb2.py: bafybeiceb2kmos2ehtu5alzegfkypbz2hgnny3an6q7fiivhmwjjgamezy
+  serialization.py: bafybeigcaq6dxyqj6npbyzls34b7vhqltwpro2inpgpvozbbw35w5u6ida
+  tests/__init__.py: bafybeibh6gjmateiceefbfwf4jpys4vn7glnasmhh6pr3p6elf4j65hg44
+  tests/test_pubsub_dialogues.py: bafybeiaozwc4segunmqres3mc7uqqddbvxrfdzizc45xmcmpg3lzxrdvha
+  tests/test_pubsub_messages.py: bafybeig6lszwrtnagl66xgjthhhmznmrc6ylax5muf6m7mdzpq6ibu76g4
+fingerprint_ignore_patterns: []
+dependencies:
+  protobuf: {}

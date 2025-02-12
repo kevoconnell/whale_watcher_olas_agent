@@ -1,0 +1,43 @@
+name: whale_watcher_abci_app
+author: author
+version: 0.1.0
+type: skill
+description: The http echo skill prints out the content of received http messages
+  and responds with success.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  README.md: bafybeiesl5jlvvu4enydib32bpyfqphlkdulxy3oqid3t32cjxya5qykci
+  __init__.py: bafybeihltsbhei6ceqoclwi7uy7rqopnzfuwt53nxsytticls7ru2pyozi
+  behaviours.py: bafybeiauwsuo4p7w3qbxygs4xa3dbvegyxfwewspdtjir7cmultayeezxa
+  dialogues.py: bafybeihsi3gt3e5yz3tmfiqohg3lku4zp2vfgcvf67gitodfky22vbdrbe
+  handlers.py: bafybeiaal54knzpt4crmroomguvsycnagnc3n7unssnplw22wu5tht7d64
+  tests/__init__.py: bafybeigb2ji4vkcap3hokcedggjwsrah7te2nxjhkorwf3ibwgyaa2glma
+  tests/test_metrics.py: bafybeih5lp7yap4f6cvfpdeiwnal4u46zwsqc6tenz7ba3oyejh2evb5um
+  tests/test_metrics_dialogues.py: bafybeihimz2eauwablcjkp25cuivcquhthlqtnyhzw5qhir53tu5544cee
+fingerprint_ignore_patterns: []
+connections: []
+contracts: []
+protocols:
+- eightballer/default:0.1.0:bafybeigyjou5vodsbobshik523ykweos7ir4qz2lw4h6kjkqjlwrk4p3fa
+- eightballer/http:0.1.0:bafybeieexnvev3uegukhfnackqq2ooceiqcnu7q7e4w73wyohvfjod6bqq
+skills: []
+behaviours:
+  main:
+    args: {}
+    class_name: WhalewatcherabciappFsmBehaviour
+handlers:
+  metrics_handler:
+    args:
+      enable_cors: false
+    class_name: HttpHandler
+models:
+  default_dialogues:
+    args: {}
+    class_name: DefaultDialogues
+  http_dialogues:
+    args: {}
+    class_name: HttpDialogues
+dependencies: {}
+is_abstract: false
+customs: []

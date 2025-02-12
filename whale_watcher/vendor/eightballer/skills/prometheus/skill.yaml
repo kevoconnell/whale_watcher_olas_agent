@@ -1,0 +1,69 @@
+name: prometheus
+author: eightballer
+version: 0.1.0
+type: skill
+description: The scaffold skill is a scaffold for your own skill implementation.
+license: Apache-2.0
+aea_version: '>=1.0.0, <2.0.0'
+fingerprint:
+  __init__.py: bafybeib3kw4s2hqfeu3oh6s5kkmccwzlhjppd5xij3osi6fjhdnpfalh74
+  behaviours.py: bafybeic7h4x6xo2vqkkfnvus6uefbbsyupog555cduxyz5tmpc5srjmpwi
+  dialogues.py: bafybeieavqnwldksbwtwgt3xb32cjmzbnvjixgcwj6eslke2unqfta7o74
+  handlers.py: bafybeifvidydqjzwxhz3cqw45db2ddo7wvgcwwauxy4oijrgltrmidbhq4
+  strategy.py: bafybeibsppt42qjsxgfeg7hntndinyg7zjgudiwcinau3l5tednomwty2y
+  tests/test_skill.py: bafybeih5jeglqi7qkk4v3unaiuteyutv5k6k7diytm4xelhbiwoprjcd44
+fingerprint_ignore_patterns: []
+connections:
+- eightballer/prometheus:0.1.1:bafybeib75z6akopysvkfbmdom4v5ajsx7rz5piachojppiukxs7saxrh64
+contracts: []
+protocols:
+- eightballer/prometheus:1.0.0:bafybeibvuazvki5pbeakpvcjm7icgf4wosacpcfnpyr4tk5dz3egoqny4a
+- eightballer/http:0.1.0:bafybeieexnvev3uegukhfnackqq2ooceiqcnu7q7e4w73wyohvfjod6bqq
+skills: []
+behaviours:
+  prometheus_behaviour:
+    args: {}
+    class_name: PrometheusBehaviour
+handlers:
+  http_handler:
+    args: {}
+    class_name: HttpHandler
+  prometheus_handler:
+    args: {}
+    class_name: PrometheusHandler
+models:
+  data_request_model:
+    args:
+      body: ''
+      decimals: 5
+      method: GET
+      outputs: []
+      url: ''
+    class_name: DataRequestModel
+  http_dialogues:
+    args: {}
+    class_name: HttpDialogues
+  prometheus_dialogues:
+    args:
+      enabled: true
+      metrics:
+      - name: num_retrievals
+        type: Gauge
+        description: Number of data retrievals
+        labels: {}
+      - name: num_requests
+        type: Gauge
+        description: Number of data requests served
+        labels: {}
+      - name: memory_usage
+        type: Gauge
+        description: Memory usage of the agent
+        labels: {}
+      - name: cpu_usage
+        type: Gauge
+        description: CPU usage of the agent
+        labels: {}
+    class_name: PrometheusDialogues
+dependencies: {}
+is_abstract: false
+customs: []
